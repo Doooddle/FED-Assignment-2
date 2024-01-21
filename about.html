@@ -27,20 +27,32 @@
 <div class="spacer"></div> 
 <div class="spacer"></div> 
 
-<form action="https://api.web3forms.com/submit" method="POST">
+<div class="form-title">
+    <h3>Contact Us</h3>
+</div>
+<section class="container">
+    <form action="https://api.web3forms.com/submit" method="POST">
 
-    <input type="hidden" name="access_key" value="27c0b4ee-18dc-45bb-888f-423b2bb47a86">
-    <input type="hidden" name="subject" value="New Submission from Web3Forms">
-    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <input type="hidden" name="access_key" value="27c0b4ee-18dc-45bb-888f-423b2bb47a86">
+        <input type="hidden" name="subject" value="New Submission from Web3Forms">
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
-    <input type="text" name="name" required>
-    <input type="email" name="email" required>
-    <input type="number" name="phone" required>
-    <textarea name="message" required></textarea>
+        <label for="name">Name: </label>
+        <input type="text" name="name" required>
 
-    <button type="submit">Submit Form</button>
+        <label for="email">Email: </label>
+        <input type="email" name="email" required>
 
-</form>
+        <label for="number">Phone Number: </label>
+        <input type="number" name="phone" required>
+
+        <label for="message">Message: </label>
+        <textarea name="message" required></textarea>
+
+        <button type="submit">Submit Form</button>
+
+    </form>
+</section>
     
   
   </body>

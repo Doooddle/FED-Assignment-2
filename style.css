@@ -5,6 +5,13 @@ body{
     font-family: Arial;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+
+
+  }
+
 /*Nav bar*/
 
 .nav-bar{
@@ -54,4 +61,32 @@ body{
 
   .spacer{
     height: 50px;
+  }
+
+
+
+  /* About Us Page */
+
+  h3{
+    font-family: Arial;
+  }
+
+  .form-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 10px; 
   }
