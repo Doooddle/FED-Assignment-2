@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <title>EduLand</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="nav.js" defer> </script>
+    <title>EduLand Homepage</title>
 </head>
+
 <body>
-<nav class ="nav-bar">
-    <img src="images/logo.png" alt="logo icon">
+    <header class="nav-logo flex">
+        <div>
+            <img src="images/logo.png" alt="logo" class="logo">
+        </div>
+    <button class="nav-toggle"><span class="sr-only">Menu</span></button>
+        <nav>
+            <ul id="nav-bar" data-visible="false" class="nav-bar flex">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
 
-    <ul>
-        <li><a href = "index.html">Home</a></li>
-        <li><a href = "games.html">Games</a></li>
-        <li><a href = "about.html">About</a></li>
-        <li><a href = "log_in.html">Log In</a></li>
-    </ul>
-</nav>
 
-
-    
-  
-  </body>
 </html>
 
 
