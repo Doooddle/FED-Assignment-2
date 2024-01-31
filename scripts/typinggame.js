@@ -6,7 +6,7 @@ var temp = document.querySelector('.time');
  	var points = 0;
  	var spans;
  	var typed;
- 	var seconds = 60;
+ 	var seconds = 30;
 
 
  	function countdown() {
@@ -21,8 +21,8 @@ var temp = document.querySelector('.time');
     			words.innerHTML = "";
     			button.disabled = false;
     			clearInterval(timer);
-    			seconds = 60;
-    			timerDiv.innerHTML = "60";
+    			seconds = 30;
+    			timerDiv.innerHTML = "30";
     			button.disabled = false;	
     		}
  		}, 1000);
