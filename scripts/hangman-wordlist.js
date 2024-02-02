@@ -1,3 +1,5 @@
+
+// list of word to be utilised for hangman game, it provides hints too
 const wordList = [
     {
         word: "guitar",

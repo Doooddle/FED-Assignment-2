@@ -1,3 +1,5 @@
+
+// Selecting the HTML elements and initializing variables
 var temp = document.querySelector('.time');
  	var button = document.querySelector("button");
  	var words = document.querySelector(".words");
@@ -8,19 +10,19 @@ var temp = document.querySelector('.time');
  	var typed;
  	var seconds = 30;
 
-
+// Function to start the countdown
  	function countdown() {
  		points = 0;
- 		var timer = setInterval(function(){
+ 		var timer = setInterval(function(){   // Starts a timer that runs every second
  			button.disabled = true;
     		seconds--;
     		temp.innerHTML = seconds;
     		if (seconds === 0) {
     			alert("Game over! Your score is " + points);
-    			scoreDiv.innerHTML = "0";
-    			words.innerHTML = "";
+    			scoreDiv.innerHTML = "0";  // Resets the score display
+    			words.innerHTML = "";     // Clears the words
     			button.disabled = false;
-    			clearInterval(timer);
+    			clearInterval(timer);    // Stops the timer
     			seconds = 30;
     			timerDiv.innerHTML = "30";
     			button.disabled = false;	
@@ -28,10 +30,11 @@ var temp = document.querySelector('.time');
  		}, 1000);
   	}
 
+// Function to generate a random word
   	function random() {
-  		words.innerHTML = "";
-  		var random = Math.floor(Math.random() * (1943 - 0 + 1)) + 0;
-  		var wordArray = list[random].split("");
+  		words.innerHTML = ""; 
+  		var random = Math.floor(Math.random() * (1943 - 0 + 1)) + 0;   // Generates a random number
+  		var wordArray = list[random].split("");      // Splits the selected word into an array of letters
   		for (var i = 0; i < wordArray.length; i++) { //building the words with spans around the letters
   			var span = document.createElement("span");
   			span.classList.add("span");
@@ -41,7 +44,7 @@ var temp = document.querySelector('.time');
   		spans = document.querySelectorAll(".span");
   	}
 
-
+// list of word available
   	const list = ['ACCOUNT','ACCURATE','ACRES','ACROSS','ACT','ACTION','ACTIVE','ACTIVITY',
   'ACTUAL','ACTUALLY','ADD','ADDITION','ADDITIONAL','ADJECTIVE','ADULT','ADVENTURE',
   'ADVICE','AFFECT','AFRAID','AFTER','AFTERNOON','AGAIN','AGAINST','AGE',
@@ -286,16 +289,17 @@ var temp = document.querySelector('.time');
   'YEAR','YELLOW','YES','YESTERDAY','YET','YOU','YOUNG','YOUNGER',
   'YOUR','YOURSELF','YOUTH','ZERO','ZOO'];
 
+  // Add a click event listener to the button
   	button.addEventListener("click", function(e){
   		countdown();
-  		random();
-  		button.disabled = true;	
+  		random();   // Generate a random word
+  		button.disabled = true;	  // Disable the button
   	});
 
-
+// Function to handle typing
   	function typing(e) {
-  			typed = String.fromCharCode(e.which);
-  			for (var i = 0; i < spans.length; i++) {
+  			typed = String.fromCharCode(e.which);   // Get the typed character
+  			for (var i = 0; i < spans.length; i++) {  
   				if (spans[i].innerHTML === typed) { // if typed letter is the one from the word
   					if (spans[i].classList.contains("bg")) { // if it already has class with the bacground color then check the next one
   						continue;
@@ -326,5 +330,5 @@ var temp = document.querySelector('.time');
 
   			}
   	}
-
+// Add a keydown event listener
   	document.addEventListener("keydown", typing, false);
