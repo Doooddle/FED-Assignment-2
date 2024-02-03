@@ -10,72 +10,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
     <script src="scripts/nav.js" defer> </script>
     <script src="scripts/slideshow.js" defer> </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <title>EduLand Homepage</title>
 </head>
 
-<body>
-    <header class="nav-logo flex">
-        <div>
-            <img src="images/logo.png" alt="logo" class="logo">
-        </div>
-    <button class="nav-toggle"><span class="sr-only">Menu</span></button>
-        <nav>
-            <ul id="nav-bar" data-visible="false" class="nav-bar flex">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section>
-        <br>
-        <br>
-        <div class="word-of-day">
-            <h2>Word of the Day</h2>
-
-            <div id="result">
-                <!-- The word and its details will be inserted here by the script -->
+    <body>
+        <header class="nav-logo flex">
+            <div>
+                <img src="images/logo.png" alt="logo" class="logo">
             </div>
-        
-            <audio id="sound" src="" type="audio/mpeg" hidden></audio> <!-- Audio element for pronunciation -->
-        
-            <script src="scripts/randomword.js"></script>
-        </div>
-    </section>
+        <button class="nav-toggle"><span class="sr-only">Menu</span></button>
+            <nav>
+                <ul id="nav-bar" data-visible="false" class="nav-bar flex">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section>
-    <div class="slideshow-container">
-        <h1> Featured Games</h1>
-        <div class="sliding fade">
-            <a href="hangmangame.html">
-            <img src="images/hangman-game.png" style="width: 100%">
-            </a>
-        </div>
-        <div class="sliding fade">
-            <a href="typinggame.html">
-            <img src="images/typing-game.png" style="width: 100%">
-            </a>
-        </div>
-        <div class ="sliding fade">
-            <a href="dictionary.html">
-            <img src ="images/dictionary-image.png" style="width: 100%">
-            </a>
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(-1)">&#10095;</a>
-        <br>
+        <section>
+            <br>
+            <br>
+            <div class="word-of-day">
+                <h2>Word of the Day</h2>
 
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-    </section>
-    <br> 
-</body>
+                <div id="result">
+                    <!-- The word and its details will be inserted here by the script -->
+                </div>
+            
+                <audio id="sound" src="" type="audio/mpeg" hidden></audio> <!-- Audio element for pronunciation -->
+            
+                <script src="scripts/randomword.js"></script>
+            </div>
+        </section>
+
+        <section>
+        <div class="slideshow-container">
+            <h1> Featured Games</h1>
+            <div class="sliding fade">
+                <a href="hangmangame.html">
+                <img src="images/hangman-game.png" style="width: 100%">
+                </a>
+            </div>
+            <div class="sliding fade">
+                <a href="typinggame.html">
+                <img src="images/typing-game.png" style="width: 100%">
+                </a>
+            </div>
+            <div class ="sliding fade">
+                <a href="dictionary.html">
+                <img src ="images/dictionary-image.png" style="width: 100%">
+                </a>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(-1)">&#10095;</a>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+        <br> 
+    
+    </body>
 
 
 </html>
