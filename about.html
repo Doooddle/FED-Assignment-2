@@ -1,134 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="nav.js" defer> </script>
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-    <title>EduLand About</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="scripts/nav.js" defer> </script>
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+        <title>EduLand About</title>
+    </head>
 
-<body>
-    <header class="nav-logo flex">
-        <div>
-            <img src="images/logo.png" alt="logo" class="logo">
-        </div>
-    <button class="nav-toggle"><span class="sr-only">Menu</span></button>
-        <nav>
-            <ul id="nav-bar" data-visible="false" class="nav-bar flex">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="games.html" >Games</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-</body>
+    <body>
+        <header class="nav-logo flex">
+            <div>
+                <img src="images/logo.png" alt="logo" class="logo">
+            </div>
+        <button class="nav-toggle"><span class="sr-only">Menu</span></button>
+            <nav>
+                <ul id="nav-bar" data-visible="false" class="nav-bar flex">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="games.html" >Games</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="spacer"></div> 
+        <div class="spacer"></div> 
+
+        <section class = "container">
+            <div class = "flex-item-about-spacer">
+            </div>
+            <div class = "flex-item-about-title">
+                <div class="form-title">
+                    <h3>EduLand's Mission</h3>
+                </div>
+            </div>
+            <div class = "flex-item-about-spacer">
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="flex-item-about">
+                <div>
+                    <p class="about-big">Fuel your child's curiosity and unlock their potential with our personalized learning adventures!
+                    </p>
+                    <dotlottie-player src="https://lottie.host/7cff57a1-0aa6-484c-b4aa-6b2adfcbfa9b/qm1wp95hAV.json" background="transparent" speed="1" style="width: 300px; height: 200px;" loop autoplay hover></dotlottie-player>
+                </div>
+            </div>
+            <div class="flex-item-about">
+                <div>
+                    
+                    <p class="about-big">Our interactive website uses 
+                        exciting games and challenges to make education engaging and rewarding for students of all ages.
+                    </p>
+                    <dotlottie-player src="https://lottie.host/e91c44c6-6f6f-4f6a-88c0-cbcf46765fc0/zY5H6DPt2Z.json" background="transparent" speed="1" style="width: 300px; height: 200px" direction="1" playMode="normal" loop autoplay hover></dotlottie-player>
+                </div>
+            </div>
+            <div class="flex-item-about">
+                <div>
+                    <p class="about-big">EduLand pushes students beyond passive learning, propelling them towards a bright future filled with the joy of discovery.
+                    </p>
+                    <dotlottie-player src="https://lottie.host/a40e3146-8c04-4fa0-82c0-b13a1b06877e/SBbU6UuMnV.json" background="transparent" speed="1" style="width: 300px; height: 200px;" loop autoplay hover></dotlottie-player>
+                </div>
+            </div>
+        </section>
+
+        <section class = "container">
+            <div class = "flex-item-about-spacer">
+            </div>
+            <div class = "flex-item-about-title">
+                <div class="form-title">
+                    <h3>Contact Us</h3>
+                </div>
+                </div>
+            </div>
+            <div class = "flex-item-about-spacer">
+            </div>
+        </section>
+
+        <br>
 
 
-<div class="spacer"></div> 
-<div class="spacer"></div> 
+        <section class="container">
+            <form action="https://formspree.io/f/xeqyejpp" method="POST">
 
-<section class = "container">
-    <div class = "flex-item-about-spacer">
-    </div>
-    <div class = "flex-item-about-title">
-        <div class="form-title">
-            <h3>EduLand's Mission</h3>
-        </div>
-    </div>
-    <div class = "flex-item-about-spacer">
-    </div>
-</section>
+                <label for="name">Name: </label>
+                <input type="text" name="name" required>
 
-<section class="container">
-    <div class="flex-item-about">
-        <div>
-            <p class="about-big">Fuel your child's curiosity and unlock their potential with our personalized learning adventures!
-            </p>
-            <dotlottie-player src="https://lottie.host/7cff57a1-0aa6-484c-b4aa-6b2adfcbfa9b/qm1wp95hAV.json" background="transparent" speed="1" style="width: 300px; height: 200px;" loop autoplay hover></dotlottie-player>
-        </div>
-  </div>
-  <div class="flex-item-about">
-    <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" required>
+
+
+                <label for="message">Message: </label>
+                <textarea name="message" required></textarea>
+
+                <button class="form-button" type="submit">Submit Form</button>
+            </form>
+        </section>
         
-        <p class="about-big">Our interactive website uses 
-            exciting games and challenges to make education engaging and rewarding for students of all ages.
-        </p>
-        <dotlottie-player src="https://lottie.host/e91c44c6-6f6f-4f6a-88c0-cbcf46765fc0/zY5H6DPt2Z.json" background="transparent" speed="1" style="width: 300px; height: 200px" direction="1" playMode="normal" loop autoplay hover></dotlottie-player>
-    </div>
-</div>
-<div class="flex-item-about">
-    <div>
-        <p class="about-big">EduLand pushes students beyond passive learning, propelling them towards a bright future filled with the joy of discovery.
-        </p>
-        <dotlottie-player src="https://lottie.host/a40e3146-8c04-4fa0-82c0-b13a1b06877e/SBbU6UuMnV.json" background="transparent" speed="1" style="width: 300px; height: 200px;" loop autoplay hover></dotlottie-player>
-    </div>
-</div>
-    
-</section>
+        <br>
+        <br>
+        <br>
 
-<section class = "container">
-    <div class = "flex-item-about-spacer">
-    </div>
-    <div class = "flex-item-about-title">
-        <div class="form-title">
-            <h3>Contact Us</h3>
-        </div>
-        </div>
-    </div>
-    <div class = "flex-item-about-spacer">
-    </div>
-</section>
-
-<br>
-<!-- <section class="container">
-    <form action="https://api.web3forms.com/submit" method="POST">
-
-        <input type="hidden" name="access_key" value="27c0b4ee-18dc-45bb-888f-423b2bb47a86">
-        <input type="hidden" name="subject" value="New Submission from Web3Forms">
-        <input type="hidden" name="redirect" value="https://web3forms.com/success">
-
-        <label for="name">Name: </label>
-        <input type="text" name="name" required>
-
-        <label for="email">Email: </label>
-        <input type="email" name="email" required>
-
-        <label for="number">Phone Number: </label>
-        <input type="number" name="phone" required>
-
-        <label for="message">Message: </label>
-        <textarea name="message" required></textarea>
-
-        <button type="submit">Submit Form</button>
-
-    </form>
-</section> -->
-
-<section class="container">
-    <form action="https://formspree.io/f/xeqyejpp" method="POST">
-
-        <label for="name">Name: </label>
-        <input type="text" name="name" required>
-
-        <label for="email">Email: </label>
-        <input type="email" name="email" required>
-
-
-        <label for="message">Message: </label>
-        <textarea name="message" required></textarea>
-
-        <button class="form-button" type="submit">Submit Form</button>
-    </form>
-</section>
-    
-  <br>
-  <br>
-  <br>
-
-  </body>
+    </body>
 </html>
