@@ -255,7 +255,7 @@ body{
     background: #cee9f8;
   } */
 
-  form{
+  .contactus-form{
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -266,7 +266,7 @@ body{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 
-  .form-button{
+  .contactus-form-button{
     border: none;
   background-color: #FF7373;
   box-shadow: 0px 5px 0px 0px #CE4646;
@@ -282,7 +282,7 @@ body{
   cursor: pointer;
   }
 
-  .form-button:active {
+  .contactus-form-button:active {
     transform: translate(0px, 5px);
     -webkit-transform: translate(0px, 5px);
     box-shadow: 0px 1px 0px 0px;
@@ -292,9 +292,9 @@ body{
 
   
   label {
-    display: block;
+    /* display: block;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 5px; */
   }
   
   input,
@@ -732,4 +732,178 @@ Games Page
   margin-top: 80px;
   text-align: center;
 }
+
+/* Login Page */
+
+.login-wrapper{
+  position: relative;
+  width: 400px;
+  height: 460px;
+  background:transparent;
+  border: 2px solid rgba(255,255,255,.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+  transition: height .2s ease;
+
+
+}
+
+.login-wrapper.active{
+  height: 520px;
+}
+
+.login-wrapper .form-box{
+
+  padding: 50px;
+}
+
+.login-wrapper .form-box.login{
+  transition: transfrom .18s ease;
+  transform: translateX(0);
+
+}
+
+.login-wrapper.active .form-box.login{
+  transition: none;
+  transform:translateX(-500px);
+}
+
+.login-wrapper .form-box.register{
+  position: absolute;
+  transition: none;
+  transform: translateX(500px);
+}
+
+.login-wrapper.active .form-box.register{
+  transition: transfrom .18s ease;
+  transform: translateX(0);
+
+}
+
+
+.form-box h2{
+  font-size:2em;
+  color: #162938;
+  text-align:center;
+}
+
+.login-input-box{
+  position:relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #162938;
+  margin: 30px 0;
+}
+
+.login-input-box label{
+  position:absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: 162938;
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s;
+
+}
+
+.login-input-box input:focus~label,
+.login-input-box input:valid~label{
+  top: -5px
+}
+
+
+
+.login-input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color:#162938;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+
+
+}
+
+.login-input-box .icon{
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #162938;
+  line-height: 57px;
+
+}
+
+.remember-forgot{
+  font-size: .9em;
+  color:#162938;
+  margin: 15px 0 15px;
+  display:flex;
+  justify-content: space-between;
+
+}
+
+.remember-forgot label input{
+  accent-color: #162938;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color:#162938;
+  text-decoration: none;
+  
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+  
+}
+
+.login-btn{
+  width:100%;
+  height:45px;
+  background: #F76C6C;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size:1em;
+
+
+
+}
+
+.login-register{
+  font-size: .9em;
+  color:#162938;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px; 
+}
+
+.login-register p a {
+  text-decoration:underline;
+}
+
+/* .login-form{
+  display: flex;
+  width: 400px;
+  background: #F76C6C;
+  margin: auto;
+  padding: 20px 60px 30px 40px;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+} */
+
+
+
 
