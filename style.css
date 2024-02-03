@@ -165,7 +165,32 @@ body{
 
 /* End of slideshow */
 
+/* Word of the day */
+.word-of-day {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Courier New', Courier, monospace;
+}
+.word-of-day h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+#result .word {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* End of word of the day */
 
   .spacer{
     height: 50px;
@@ -707,5 +732,4 @@ Games Page
   margin-top: 80px;
   text-align: center;
 }
-
 

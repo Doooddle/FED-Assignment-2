@@ -29,16 +29,23 @@
         </nav>
     </header>
 
-    <h2>Random Word Fetcher</h2>
+    <section>
+        <br>
+        <br>
+        <div class="word-of-day">
+            <h2>Word of the Day</h2>
 
-    <div id="result">
-        <!-- The word and its details will be inserted here by the script -->
-    </div>
+            <div id="result">
+                <!-- The word and its details will be inserted here by the script -->
+            </div>
+        
+            <audio id="sound" src="" type="audio/mpeg" hidden></audio> <!-- Audio element for pronunciation -->
+        
+            <script src="scripts/randomword.js"></script>
+        </div>
+    </section>
 
-    <audio id="sound" src="" type="audio/mpeg" hidden></audio> <!-- Audio element for pronunciation -->
-
-    <script src="scripts/randomword.js"></script>
-
+    <section>
     <div class="slideshow-container">
         <h1> Featured Games</h1>
         <div class="sliding fade">
@@ -66,6 +73,8 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
+    </section>
+    <br> 
 </body>
 
 

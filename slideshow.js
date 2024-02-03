@@ -26,7 +26,7 @@
     dots[slideIndex-1].className += " active";
   }
 
-  let slideInterval = setInterval(plusSlides, 2000, 1); // Change slide every 2 seconds
+  let slideInterval = setInterval(plusSlides, 3000, 1); // Change slide every 3 seconds
 
   // Pause slideshow when hovering over the slideshow container
   document.querySelector('.slideshow-container').addEventListener('mouseenter', () => {
@@ -35,7 +35,7 @@
 
   // Resume slideshow when mouse leaves the slideshow container
   document.querySelector('.slideshow-container').addEventListener('mouseleave', () => {
-    slideInterval = setInterval(plusSlides, 2000, 1); // Change slide every 2 seconds
+    slideInterval = setInterval(plusSlides, 3000, 1); // Change slide every 3 seconds
   });
 
   
