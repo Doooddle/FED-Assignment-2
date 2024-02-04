@@ -1,6 +1,4 @@
-# EduLand Educational Website Project #
-# (FED Assignment 2) #
-# By Danish and Garrett #
+# EduLand Educational Website Project (FED Assignment 2) By Danish and Garrett #
 
 User’s goal:
 Unleash student's inner word wizard: Master the art of vocabulary through captivating challenges, unlocking new words with every victory and feeling the exhilarating rush of linguistic growth.
