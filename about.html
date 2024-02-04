@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="scripts/nav.js" defer> </script>
         <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-
+        <script src="scripts/message.js" defer> </script>
         <title>EduLand About</title>
     </head>
 
@@ -86,7 +86,7 @@
 
 
         <section class="container">
-            <form action="https://formspree.io/f/xeqyejpp" method="post" class="contactus-form">
+            <form action="https://formspree.io/f/xeqyejpp" method="post" class="contactus-form" onsubmit="showMessage('Query Submitted! We will contact you soon!')">
 
                 <label for="name">Name: </label>
                 <input type="text" id="name" name="name" required>

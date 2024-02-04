@@ -233,6 +233,7 @@ body{
   .word-of-day h2{
     font-size: 15px;
   }
+}
 /* End of word of the day */
 
   .spacer{
@@ -952,4 +953,3 @@ Games Page
   transform: translate(-50%, -50%);
 
 }
-

@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="scripts/nav.js" defer> </script>
         <script src="scripts/login.js" defer></script>
+        <script src="scripts/message.js" defer></script>
         <title>EduLand Login</title>
     </head>
 
@@ -33,7 +34,7 @@
         <div class ="login-wrapper">
             <div class="form-box login">
                 <h2>Login</h2>
-                <form action="#" class="login-form">
+                <form action="#" class="login-form" onsubmit="showMessage('You are now logged in!')">
                     <div class = "login-input-box">
                         
                         <span class = "icon"><ion-icon name="mail-outline"></ion-icon></span>
@@ -61,7 +62,7 @@
 
             <div class="form-box register">
                 <h2>Registration</h2>
-                <form action="#">
+                <form action="#" onsubmit="showMessage('You are now registered!')">
                     <div class = "login-input-box">
                         
                         <span class = "icon"><ion-icon name="person-outline"></ion-icon></span>
