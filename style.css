@@ -60,8 +60,8 @@ body{
 }
 
 .nav-bar a:hover {
-  border-bottom: 3px solid #24305E;
-  padding-bottom: 3px;
+  border-bottom: 2px solid #24305E;
+  padding-bottom: 5px;
 
 }
 
