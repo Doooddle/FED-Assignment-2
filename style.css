@@ -102,6 +102,44 @@ body{
   }
 }
 /* end of nav bar*/
+
+/* Carousel */
+.games-header h1{
+  padding-top: 2rem;
+  font-size: 40px;
+  text-align: center;
+  
+}
+.carousel-item{
+  padding-left: 0%;
+  padding-right: 0%;
+  width: 100%;
+  margin-top: -30px;
+}
+
+.carousel-item p{
+  font-size: 20px;
+}
+
+.btn-over-image {
+  position: absolute;
+  bottom: 100px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+@media(max-width: 35rem) {
+  .btn-over-image{
+    bottom: 30px;
+  }
+  .games-header h1{
+    font-size: 20px;
+  }
+}
+
+/* End of Carousel */
+
 /* slideshow */
 .slideshow-container img{
   vertical-align: middle
