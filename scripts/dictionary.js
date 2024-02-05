@@ -34,7 +34,7 @@ btn.addEventListener("click", () => {
             sound.setAttribute("src", `${data[0].phonetics[0].audio}`);    // Set the audio source for pronunciation(Only if api has a sound link)
         })
         .catch(() => {
-            result.innerHTML = `<h3 class="error">Couldn't Find The Word</h3>`;      // If word data is not found
+            result.innerHTML = "<h3 class=\"error\">Couldn't Find The Word</h3>";      // If word data is not found
         });
 });
 function playSound() {           // Function to play the pronunciation audio

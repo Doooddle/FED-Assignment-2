@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="scripts/nav.js" defer> </script>
@@ -32,7 +31,7 @@
         <div class="spacer"></div> 
         <div class="spacer"></div> 
 
-        <section class = "container">
+        <div class = "container">
             <div class = "flex-item-about-spacer">
             </div>
             <div class = "flex-item-about-title">
@@ -42,24 +41,22 @@
             </div>
             <div class = "flex-item-about-spacer">
             </div>
-        </section>
+        </div>
 
         <br>
         <br>
         <br>
 
 
-        <section class="container">
+        <div class="container">
             <div class="flex-item-games">
                 <h1>Type Racer</h1>
                 <div>
                     <img src="images/typing-game.png" alt="typinggamepicture">
                 </div>
-                <a href="typinggame.html">
-                    <button class="game-button">
-                        Play!
-                    </button>
-                </a>
+                <form action="typinggame.html">
+                    <button type="submit" class="game-button">Play</button>
+                 </form>
                 
         </div>
         <div class="flex-item-games">
@@ -67,25 +64,21 @@
                 <div>
                     <img src="images/hangman-game.png" alt="hangmangamepicture">
                 </div>
-                <a href="hangmangame.html">
-                    <button class="game-button">
-                        Play!
-                    </button>
-                </a>
+                <form action="hangmangame.html">
+                    <button type="submit" class="game-button">Play</button>
+                 </form>
             </div>
             <div class="flex-item-games">
                 <h1>Dictionary</h1>
                 <div>
                     <img src="images/dictionary-image.png" alt="hangmangamepicture">
                 </div>
-                <a href="dictionary.html">
-                    <button class="game-button">
-                        Search!
-                    </button>
-                </a>
+                <form action="dictionary.html">
+                    <button type="submit" class="game-button">Search</button>
+                 </form>
             </div>
             
-        </section>
+        </div>
 
 
         

@@ -42,7 +42,7 @@ body{
   padding: 0;
   margin: 0;
   padding-right: 20px;
-  background-image: hsl(0 0% 100% / 0.1);
+  background-color: hsl(0, 0%, 100% / 0.1);
   backdrop-filter: blur(1rem);
 }
 
@@ -97,7 +97,7 @@ body{
       background-position: center;
       background-color: transparent;
       width: 1.31rem;
-      aspect-ratio: 1;
+      aspect-ratio: 1/1;
       border: 0;
   }
   
@@ -181,9 +181,13 @@ body{
     height: 50px;
   }
 
+  /*  /  /  /  /  /
+
+  About Us Page
+
+  /  /  /  /  / */
 
 
-  /* About Us Page */
 
   h3{
     font-family: Arial;
@@ -269,7 +273,6 @@ body{
 
   .contactus-form-button:active {
     transform: translate(0px, 5px);
-    -webkit-transform: translate(0px, 5px);
     box-shadow: 0px 1px 0px 0px;
   }
 
@@ -338,7 +341,6 @@ Typing Game Page
 
 .typinggame-button:active {
   transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
   box-shadow: 0px 1px 0px 0px;
 }
 
@@ -472,7 +474,7 @@ Hangman Game Page
 }
 .game-modal.show {
   opacity: 1;
-  pointer-events: auto;
+  /* pointer-events: auto; */
   transition: opacity 0.4s 0.4s ease;
 }
 .game-modal .content {
@@ -596,7 +598,6 @@ Games Page
 
 .game-button:active {
   transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
   box-shadow: 0px 1px 0px 0px;
 }
 
@@ -639,7 +640,14 @@ Games Page
 }
 
 
-/* Dictionary Page */
+
+/*  /  /  /  /  /
+
+Dictionary Page
+
+/  /  /  /  / */
+
+
 .dictionary-container {
   background-color: #ffffff;
   width: 90vmin;
@@ -714,7 +722,13 @@ Games Page
   text-align: center;
 }
 
-/* Login Page */
+
+/*  /  /  /  /  /
+
+Login Page
+
+/  /  /  /  / */
+
 
 .login-wrapper{
   position: relative;
@@ -745,7 +759,7 @@ Games Page
 }
 
 .login-wrapper .form-box.login{
-  transition: transfrom .18s ease;
+  transition: transform .18s ease;
   transform: translateX(0);
 
 }
@@ -762,7 +776,7 @@ Games Page
 }
 
 .login-wrapper.active .form-box.register{
-  transition: transfrom .18s ease;
+  transition: transform .18s ease;
   transform: translateX(0);
 
 }
@@ -787,7 +801,7 @@ Games Page
   top: 50%;
   left: 5px;
   transform: translateY(-50%);
-  color: 162938;
+  color: #162938;
   font-weight: 500;
   pointer-events: none;
   transition: .5s;
@@ -886,11 +900,30 @@ Games Page
 } */
 
 
-/* PreLoader */
-#preloader {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/*  /  /  /  /  /
 
+Preloader
+
+/  /  /  /  / */
+
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: lightgrey;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disppear{
+  animation: vanish 3s forwards;
+}
+@keyframes vanish {
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
 }

@@ -34,16 +34,20 @@ User Stories:
 
 #### - Home Page
 - ### Word of the Day Implementation (API & Javascript)
+
     -  This feature utilizes both API and Javascript. 
     - API Implementation
         -  Utlizes two APIs Heroku Random Word API and Dictionary API. We retrieve a random word from Random Word Api. This word is then used to fetch defintions and the type of word from the Dictionary API.
     - Javascript Implementation (randomword.js)
         - Based on the data retrieved from the APIs it is then displayed on to the page.
+
+
 - ### Slideshow Implementation (Javascript)
     -
 
 #### - Games Page
- - ### Typing Game (API & Javascript)
+ - ### Typing Game (API & Javascript & Lottie)
+
     - This feature utlizes both API and Javascript.
     - API Implementation
         - Utilizes Vercel Random Word API, where we retrieve 50 random words, that are uppercase and alphabetized, adding it to a list, which would be used for the typing game.
@@ -53,7 +57,12 @@ User Stories:
         - Keystroke detection: Tracks player input and highlights matching letters, providing visual feedback and a sense of progress. (span)
         - Scorekeeping: Tracks correctly typed words and displays the player's score, motivating them to improve their performance. A pop up message is shown when the countdown ends.
         - Animated word fading: Adds a visual flourish to the game, making it more visually appealing and rewarding for players.
-  - ### Hangman Game (Javascript)
+    - Lottie Animation Implementation (preloader.js)
+        - While waiting for the page to load, we utilised a lottie animation that vanishes after 3 seconds.
+
+
+  - ### Hangman Game (Javascript & Lottie)
+
     - Javascript Implementation (hangman.js, hangman-wordlist.js)
         - Hangman visuals: Displays an evolving hangman image as players make incorrect guesses, creating a sense of urgency and engagement. If a user inputs a wrong character, a new hangman visual is shown.
         - Word selection: Randomly chooses a word from a list, ensuring a different challenge each time. The words are randomly selected from the hangman-wordlist.js.
@@ -62,7 +71,12 @@ User Stories:
         - Guess tracking: Highlights correctly guessed letters within the word and keeps track of wrong guesses. The player is given 6 tries to guess the word, this is displayed on the page.
         - Game over scenarios: Displays a modal with a victory or loss message, along with the correct word, at the end of each game, after 6 wrong tries.
         - Play again option: Offers a convenient button to initiate a new game. The games is then restarted and a new word and hint is shown. The hangman picture changes to the original hangman back.
+    - Lottie Animation Implementation (preloader.js)
+        - While waiting for the page to load, we utilised a lottie animation that vanishes after 3 seconds.
+
+
  - ### Dictionary (API & Javascript)
+
     - API Implementation
         - Inputed word is used to retrieve data from the Dictionary API. If the data is available we would retrieve its defintion, sound (how to pronounce the word) and example on how to use the word.
     - Javascript Implementation (dictionary.js)
@@ -72,18 +86,21 @@ User Stories:
         - User-friendly interface: Presents information in a clear and readable format, with a dedicated button to play pronunciation audio.
 
 #### - About Page
+
  - ### About Us Section (Lottie Implementation)
     - This section explains the reason for the website and why it is set up. It is seperated into 3 sections, with each section having a lottie animaton which would animate when hovered.
  - ### Contact Us Form (API)
     - The user will input name, email and message into the form, The form will then utilize Formspree API to send the data to the Formspree database for the owner to see the information. A pop up message is then shown.
 
 #### - Login Page (Javascript)
+
  - ### Login Form (login.js)
     - The user is able to input their email and password into the form. There is a clickable checkbox if user wants the website to "Remember me". Once user presses Login button, a pop up message is then shown. There is also a clickable "Register" so that the page changes to Registration Form. This is done so by making the wrapper active.
  - ### Register form (login.js)
     - The user is able to input their username, email and password into the form. There is a clickable checkbox if user wants the website to "Agree to the terms & Conditions". Once user presses Register button, a pop up message is shown. There is also a clickable "Login" so that the page changes to Login Form. This is done so by making the wrapper unactive.
 
 #### - Responsive Web Design
+
  - The navigation bar will adjust to a Hamburger Menu, in top down design, when the screen is less than 35rem, making it easier for users to go to other sections.
  - In the Home Page,
 
@@ -100,6 +117,7 @@ User Stories:
  7. hangman-wordlist.js
  8. dictionary.js 
  9. login.js 
+ 10. preloader.js (Used to create loading screen for lottie animation.)
 
 
 
@@ -112,6 +130,7 @@ User Stories:
 
 ### Lottie Implementation (Explained in-depth above)
  1. Lottie animates when hovered. (Used in about us section)
+ 2. Lottie animation used as loading screen before page loads fully. (Used in Hangman Game, Typing Game and Dictionary)
 
 
 ## Technologies Used ##

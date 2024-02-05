@@ -2,14 +2,19 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
-        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts/preloader.js" defer></script>
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
         <title>Eduland Dictionary</title>
     </head>
     
     <body>
+        <div class="loader">
+            <dotlottie-player src="https://lottie.host/65022aa6-9c10-4878-8be0-894b3ff19f81/ZTAhZsCfh2.json" background="transparent" speed="2" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        </div>
         <a href="games.html" class="back-button">
             <img src="images/back-to-gamepage.png" alt="Back to Home">
         </a>
@@ -22,7 +27,7 @@
                     type="text"
                     placeholder="Type the word here.."
                     id="inp-word"
-                />
+                >
                 <button id="search-btn">Search</button>
             </div>
             <div class="result" id="result"></div>
