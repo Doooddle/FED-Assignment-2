@@ -177,6 +177,93 @@ body{
 }
 /* End of word of the day */
 
+/* Start of footer */
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer {
+  background: #F76C6C;
+  padding: 30px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Adjusted bottom position */
+  background-color: red;
+  height: 2px;
+  width: 50px;
+}
+
+.footer-col h4 {
+  font-size: 20px;
+  color: white;
+  margin-top: 0; /* Adjusted margin */
+  font-weight: 600;
+  position: relative;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #A8D0E6;
+  padding-left: 8px;
+}
+
+@media (max-width: 35rem) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 27rem) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+.footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+
+/* End of footer */
+
+
   .spacer{
     height: 50px;
   }
