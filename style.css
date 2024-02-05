@@ -7,10 +7,10 @@ body{
     box-sizing: border-box;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+}
 
 /*Nav bar*/
 
@@ -111,8 +111,7 @@ body{
 .games-header h1{
   padding-top: 2rem;
   font-size: 40px;
-  text-align: center;
-  
+  text-align: center;  
 }
 .carousel-item{
   padding-left: 0%;
@@ -124,26 +123,45 @@ body{
 .carousel-item p{
   font-size: 20px;
 }
+/* end of carousel */
 
+/* Carousel button */
 .btn-over-image {
-  position: absolute;
-  bottom: 100px; /* Adjust as needed */
-  left: 50%;
-  transform: translateX(-50%);
   z-index: 1;
-
+  padding: 15px 30px;
+  border-radius: 5px; 
+  background-color: #F76C6C; /* Replace with final button color*/
+  box-shadow: 0px 5px 0px 0px #CE4646;
+  color: #fff; 
+  font-size: 20px; 
+  cursor: pointer; 
+  transition: background-color 0.2s ease-in-out; /* Hover effect transition */
 }
 
-@media(max-width: 35rem) {
+.btn-over-image:active {
+  transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.carousel-item .btn-over-image{
+  position: relative;
+  bottom: 88px;
+  margin: 0 auto;
+}
+
+@media (max-width: 42rem){
   .btn-over-image{
-    bottom: 30px;
-  }
-  .games-header h1{
-    font-size: 20px;
+    padding: 8px 16px;
   }
 }
 
-/* End of Carousel */
+@media (max-width:35rem){
+  .btn-over-image{
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+/* End of Carousel button*/
 
 /* Word of the day */
 .word-of-day {
@@ -259,8 +277,6 @@ ul {
   font-size: 1rem;
   font-weight: 300;
 }
-
-
 /* End of footer */
 
 
@@ -273,10 +289,6 @@ ul {
   About Us Page
 
   /  /  /  /  / */
-
-
-
-
 
   .form-title {
     font-size: 15px;
@@ -300,9 +312,9 @@ ul {
   .flex-item-about-title{
     flex: 1 1 10%;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    background: #374785;
-    
+    background: #374785;    
   }
+
   .flex-item-about-title:hover { 
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35); 
   }
@@ -316,8 +328,6 @@ ul {
     font-size: 20px;
     font-weight: bold;
   }
-
-
 
   /* form {
     display: flex;
@@ -342,18 +352,18 @@ ul {
 
   .contactus-form-button{
     border: none;
-  background-color: #FF7373;
-  box-shadow: 0px 5px 0px 0px #CE4646;
-  outline: none;
-  border-radius: 2px;
-  padding: 5px 8px;
-  font-size: 22px;
-  text-decoration: none;
-  margin: 20px;
-  color: #fff;
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
+    background-color: #FF7373;
+    box-shadow: 0px 5px 0px 0px #CE4646;
+    outline: none;
+    border-radius: 2px;
+    padding: 5px 8px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
   }
 
   .contactus-form-button:active {
@@ -361,11 +371,6 @@ ul {
     box-shadow: 0px 1px 0px 0px;
   }
 
-  
-
-  
-  
-  
   input,
   textarea {
     margin-bottom: 10px; 
@@ -395,8 +400,6 @@ Typing Game Page
 	height: 500px;
 }
 
-
-
 .scoreWrap {float: left;}
 .timeWrap {float: right;}
 
@@ -405,8 +408,6 @@ Typing Game Page
 	display: block;
 	clear: both;
 }
-
-
 
 .typinggame-button {
    border: none;
@@ -458,6 +459,7 @@ Hangman Game Page
   min-height: 100vh;
   background: #A8D0E6;
 }
+
 .hangman-container {
   display: flex;
   width: 850px;
@@ -469,16 +471,19 @@ Hangman Game Page
   justify-content: space-between;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
+
 .hangman-box img {
   user-select: none;
   max-width: 270px;
 }
+
 .hangman-box h1 {
   font-size: 1.45rem;
   text-align: center;
   margin-top: 20px;
   /* text-transform: uppercase; */
 }
+
 .game-box .word-display {
   gap: 10px;
   list-style: none;
@@ -487,6 +492,7 @@ Hangman Game Page
   justify-content: center;
   align-items: center;
 }
+
 .word-display .letter {
   width: 28px;
   font-size: 2rem;
@@ -496,22 +502,27 @@ Hangman Game Page
   text-transform: uppercase;
   border-bottom: 3px solid #000;
 }
+
 .word-display .letter.guessed {
   margin: -40px 0 35px;
   border-color: transparent;
 }
+
 .game-box h4 {
   text-align: center;
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 15px;
 }
+
 .game-box h4 b {
   font-weight: 600;
 }
+
 .game-box .guesses-text b {
   color: #ff0000;
 }
+
 .game-box .keyboard {
   display: flex;
   gap: 5px;
@@ -519,6 +530,7 @@ Hangman Game Page
   margin-top: 40px;
   justify-content: center;
 }
+
 :where(.game-modal, .keyboard) button {
   color: #fff;
   border: none;
@@ -530,17 +542,21 @@ Hangman Game Page
   text-transform: uppercase;
   background: #F76C6C;
 }
+
 .keyboard button {
   padding: 7px;
   width: calc(100% / 9 - 5px);
 }
+
 .keyboard button[disabled] {
   pointer-events: none;
   opacity: 0.6;
 }
+
 :where(.game-modal, .keyboard) button:hover {
   background: #fa9a9a;
 }
+
 .game-modal {
   position: fixed;
   top: 0;
@@ -557,11 +573,13 @@ Hangman Game Page
   padding: 0 10px;
   transition: opacity 0.4s ease;
 }
+
 .game-modal.show {
   opacity: 1;
   pointer-events: auto; 
   transition: opacity 0.4s 0.4s ease;
 }
+
 .game-modal .content {
   padding: 30px;
   max-width: 420px;
@@ -571,28 +589,35 @@ Hangman Game Page
   text-align: center;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
+
 .game-modal img {
   max-width: 130px;
   margin-bottom: 20px;
 }
+
 .game-modal img[src="images/victory.gif"] {
   margin-left: -10px;
 }
+
 .game-modal h4 {
   font-size: 1.53rem;
 }
+
 .game-modal p {
   font-size: 1.15rem;
   margin: 15px 0 30px;
   font-weight: 500;
 }
+
 .game-modal p b {
   color: #5E63BA;
   font-weight: 600;
 }
+
 .game-modal button {
   padding: 12px 23px;
 }
+
 @media (max-width: 782px) {
   .hangman-container {
       flex-direction: column;
@@ -675,10 +700,12 @@ Games Page
 } 
 
 .game-button{
-  padding: 10px 40px;
   border: none;
+  padding: 10px 40px;
+  border-radius: 2px;
   background-color: #FF7373;
   box-shadow: 0px 5px 0px 0px #CE4646;
+  cursor: pointer;
 }
 
 .game-button:active {
@@ -698,8 +725,7 @@ Games Page
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 35rem)
-{
+@media (max-width: 35rem) {
   .container{
     display: flex;
     justify-content: center;
@@ -718,13 +744,7 @@ Games Page
     margin-left: 10px;
     margin-top: 10px;
   }
-
-  
-
-  
 }
-
-
 
 /*  /  /  /  /  /
 
@@ -744,11 +764,13 @@ Dictionary Page
   border-radius: 10px;
   box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
 }
+
 .search-box {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 .search-box input {
   padding: 5px;
   width: 70%;
@@ -757,6 +779,7 @@ Dictionary Page
   border-bottom: 3px solid #F76C6C;
   font-size: 16px;
 }
+
 .search-box button {
   padding: 15px 0;
   width: 25%;
@@ -766,18 +789,22 @@ Dictionary Page
   color: #ffffff;
   border-radius: 5px;
 }
+
 .result {
   position: relative;
 }
+
 .result h3 {
   font-size: 30px;
   color: #1f194c;
 }
+
 .result .word {
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
 }
+
 .result button {
   background-color: transparent;
   color: #F76C6C;
@@ -785,6 +812,7 @@ Dictionary Page
   outline: none;
   font-size: 18px;
 }
+
 .result .details {
   display: flex;
   gap: 10px;
@@ -792,9 +820,11 @@ Dictionary Page
   margin: 5px 0 20px 0;
   font-size: 14px;
 }
+
 .word-meaning {
   color: #575a7b;
 }
+
 .word-example {
   color: #575a7b;
   font-style: italic;
@@ -802,6 +832,7 @@ Dictionary Page
   padding-left: 20px;
   margin-top: 30px;
 }
+
 .error {
   margin-top: 80px;
   text-align: center;
@@ -830,8 +861,6 @@ Login Page
   margin: auto;
   overflow: hidden;
   transition: height .2s ease;
-
-
 }
 
 .login-wrapper.active{
@@ -846,7 +875,6 @@ Login Page
 .login-wrapper .form-box.login{
   transition: transform .18s ease;
   transform: translateX(0);
-
 }
 
 .login-wrapper.active .form-box.login{
@@ -863,7 +891,6 @@ Login Page
 .login-wrapper.active .form-box.register{
   transition: transform .18s ease;
   transform: translateX(0);
-
 }
 
 
@@ -890,15 +917,12 @@ Login Page
   font-weight: 500;
   pointer-events: none;
   transition: .5s;
-
 }
 
 .login-input-box input:focus~label,
 .login-input-box input:valid~label{
   top: -5px
 }
-
-
 
 .login-input-box input {
   width: 100%;
@@ -910,8 +934,6 @@ Login Page
   color:#162938;
   font-weight: 600;
   padding: 0 35px 0 5px;
-
-
 }
 
 .login-input-box .icon{
@@ -920,7 +942,6 @@ Login Page
   font-size: 1.2em;
   color: #162938;
   line-height: 57px;
-
 }
 
 .remember-forgot{
@@ -929,7 +950,6 @@ Login Page
   margin: 15px 0 15px;
   display:flex;
   justify-content: space-between;
-
 }
 
 .remember-forgot label input{
@@ -940,12 +960,10 @@ Login Page
 .remember-forgot a {
   color:#162938;
   text-decoration: none;
-  
 }
 
 .remember-forgot a:hover {
   text-decoration: underline;
-  
 }
 
 .login-btn{
@@ -957,9 +975,6 @@ Login Page
   border-radius: 5px;
   cursor: pointer;
   font-size:1em;
-
-
-
 }
 
 .login-register{
@@ -1006,6 +1021,7 @@ Preloader
 .disppear{
   animation: vanish 3s forwards;
 }
+
 @keyframes vanish {
   100%{
     opacity: 0;
