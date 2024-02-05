@@ -92,11 +92,11 @@ User Stories:
     - ### Contact Us Form (API)
         - The user will input name, email and message into the form, The form will then utilize Formspree API to send the data to the Formspree database for the owner to see the information. A pop up message is then shown.
 
-5. #### Login Page (Javascript)
+5. #### Login Page
 
-    - ### Login Form (login.js)
+    - ### Login Form (Javascript)
         - The user is able to input their email and password into the form. There is a clickable checkbox if user wants the website to "Remember me". Once user presses Login button, a pop up message is then shown. There is also a clickable "Register" so that the page changes to Registration Form. This is done so by making the wrapper active.
-    - ### Register form (login.js)
+    - ### Register form (Javascript)
         - The user is able to input their username, email and password into the form. There is a clickable checkbox if user wants the website to "Agree to the terms & Conditions". Once user presses Register button, a pop up message is shown. There is also a clickable "Login" so that the page changes to Login Form. This is done so by making the wrapper unactive.
 
 6. #### Responsive Web Design
