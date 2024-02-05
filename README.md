@@ -20,19 +20,20 @@ User Stories:
 
 ### Wireframe ###
 
-- The wireframe shows our intital idea on designing my website. [Wireframe](https://xd.adobe.com/view/30e21a27-e5c4-49e8-8031-d41c51f639f9-65b1/)
+- The wireframe shows our intital idea on designing our website. [Wireframe](https://xd.adobe.com/view/30e21a27-e5c4-49e8-8031-d41c51f639f9-65b1/)
 
 
 
 ## Features ##
 
 
-1. #### Navigation Bar
+1. ### Navigation Bar
 
 
 
 
-2. #### Home Page
+2. ### Home Page
+
     - ### Word of the Day Implementation (API & Javascript)
 
         -  This feature utilizes both API and Javascript. 
@@ -45,7 +46,8 @@ User Stories:
     - ### Slideshow Implementation (Javascript)
         -
 
-3. #### Games Page
+3. ### Games Page
+
     - ### Typing Game (API & Javascript & Lottie)
 
         - This feature utlizes both API and Javascript.
@@ -85,21 +87,21 @@ User Stories:
             - Error handling: Displays an error message if the word is not found or if there's an issue fetching data.
             - User-friendly interface: Presents information in a clear and readable format, with a dedicated button to play pronunciation audio.
 
-4. #### About Page
+4. ### About Page
 
     - ### About Us Section (Lottie Implementation)
         - This section explains the reason for the website and why it is set up. It is seperated into 3 sections, with each section   having a lottie animaton which would animate when hovered.
     - ### Contact Us Form (API)
         - The user will input name, email and message into the form, The form will then utilize Formspree API to send the data to the Formspree database for the owner to see the information. A pop up message is then shown.
 
-5. #### Login Page
+5. ### Login Page
 
     - ### Login Form (Javascript)
         - The user is able to input their email and password into the form. There is a clickable checkbox if user wants the website to "Remember me". Once user presses Login button, a pop up message is then shown. There is also a clickable "Register" so that the page changes to Registration Form. This is done so by making the wrapper active.
     - ### Register form (Javascript)
         - The user is able to input their username, email and password into the form. There is a clickable checkbox if user wants the website to "Agree to the terms & Conditions". Once user presses Register button, a pop up message is shown. There is also a clickable "Login" so that the page changes to Login Form. This is done so by making the wrapper unactive.
 
-6. #### Responsive Web Design
+6. ### Responsive Web Design
 
     - The navigation bar will adjust to a Hamburger Menu, in top down design, when the screen is less than 35rem, making it easier for users to go to other sections.
     - In the Home Page,
