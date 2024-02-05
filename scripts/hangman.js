@@ -1,4 +1,3 @@
-
 // Selecting DOM elements for the game interface
 const wordDisplay = document.querySelector(".word-display");
 const guessesText = document.querySelector(".guesses-text b");
