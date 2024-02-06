@@ -16,7 +16,7 @@ const resetGame = () => {
     wrongGuessCount = 0;
 
     // Reset UI elements
-    hangmanImage.src = "images/hangman-game-images/images/hangman-0.svg";   // Initial hangman image (without the body)
+    hangmanImage.src = "../images/hangman-game-images/images/hangman-0.svg";   // Initial hangman image (without the body)
     guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
     wordDisplay.innerHTML = currentWord.split("").map(() => `<li class="letter"></li>`).join("");   // Display blank spaces for letters
     keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);  // Enable all keyboard buttons
@@ -37,7 +37,7 @@ const getRandomWord = () => {
 const gameOver = (isVictory) => {
     // Prepare content for the game over modal
     const modalText = isVictory ? `You found the word:` : 'The correct word was:';
-    gameModal.querySelector("img").src = `images/hangman-game-images/images/${isVictory ? 'victory' : 'lost'}.gif`;  // Display victory or loss gif
+    gameModal.querySelector("img").src = `../images/hangman-game-images/images/${isVictory ? 'victory' : 'lost'}.gif`;  // Display victory or loss gif
     gameModal.querySelector("h4").innerText = isVictory ? 'Congrats!' : 'Game Over!';
     gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`;
     gameModal.classList.add("show");   // Show the game over modal
@@ -59,7 +59,7 @@ const initGame = (button, clickedLetter) => {
     } else {
         // Wrong guess: increment wrong guess count and update hangman image
         wrongGuessCount++;
-        hangmanImage.src = `images/hangman-game-images/images/hangman-${wrongGuessCount}.svg`;
+        hangmanImage.src = `../images/hangman-game-images/images/hangman-${wrongGuessCount}.svg`;
     }
     button.disabled = true; // Disabling the clicked button so user can't click again
     guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;   // Update guess count display
