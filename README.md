@@ -27,10 +27,12 @@ User Stories:
 ## Features ##
 
 
-1. ### Navigation Bar
-
-
-
+1. ### Navigation Bar (Javascript)
+    - This feature utilizes Javascript.
+    - Javascript Implementation (nav.js)
+        - Toggles responsive view: On-click, responsive view of navigation bar will slide into frame.
+        - Toggles menu: On-click, hamburger menu will be replaced with an 'X', representing close.
+        - Blurred screen: Aids users to focus on menu across the various pages.
 
 2. ### Home Page
 
@@ -42,9 +44,11 @@ User Stories:
         - Javascript Implementation (randomword.js)
             - Based on the data retrieved from the APIs it is then displayed on to the page.
 
-
-    - ### Slideshow Implementation (Javascript)
-        -
+    - ### Carousel Implementation (Bootstrap)
+        - This feature ultilizes bootstrap.
+        - Carousel component in bootstrap creates a carousel to display the featured games section of the homepage
+            - Automatic sliding: Every few seconds when the cursor is not on the carousel, it will slide to the next page.
+            - Responsive: Carousel will resize itself as page size decreases.
 
 3. ### Games Page
 
@@ -62,7 +66,6 @@ User Stories:
         - Lottie Animation Implementation (preloader.js)
             - While waiting for the page to load, we utilised a lottie animation that vanishes after 3 seconds.
 
-
     - ### Hangman Game (Javascript & Lottie)
 
         - Javascript Implementation (hangman.js, hangman-wordlist.js)
@@ -75,7 +78,6 @@ User Stories:
             - Play again option: Offers a convenient button to initiate a new game. The games is then restarted and a new word and hint is shown. The hangman picture changes to the original hangman back.
         - Lottie Animation Implementation (preloader.js)
             - While waiting for the page to load, we utilised a lottie animation that vanishes after 3 seconds.
-
 
     - ### Dictionary (API & Javascript)
 
@@ -90,7 +92,7 @@ User Stories:
 4. ### About Page
 
     - ### About Us Section (Lottie Implementation)
-        - This section explains the reason for the website and why it is set up. It is seperated into 3 sections, with each section   having a lottie animaton which would animate when hovered.
+        - This section explains the reason for the website and why it is set up. It is seperated into 3 sections, with each section having a lottie animaton which would animate when hovered.
     - ### Contact Us Form (API)
         - The user will input name, email and message into the form, The form will then utilize Formspree API to send the data to the Formspree database for the owner to see the information. A pop up message is then shown.
 
@@ -104,23 +106,21 @@ User Stories:
 6. ### Responsive Web Design
 
     - The navigation bar will adjust to a Hamburger Menu, in top down design, when the screen is less than 35rem, making it easier for users to go to other sections.
-    - In the Home Page,
+    - In the Home Page, the 'Featured Games' carousel will resize itself to fit the frame, and descriptive text will be removed to aid visibility
 
     - In the Games Page, the games will adjust to a top down design, 1 game stacked on each other, instead of 3 side by side each other.
     - In the About Us Section, the 3 sections explaining the about us, will be stacked on top of each other, when the screen become smaller.
 
 ### Javascript Features (Explained in-depth above)
  1. nav.js 
- 2. slideshow.js 
- 3. randomword.js 
- 4. message.js (Used to show pop up message after submitting a form.)
- 5. typinggame.js 
- 6. hangman.js 
- 7. hangman-wordlist.js
- 8. dictionary.js 
- 9. login.js 
- 10. preloader.js (Used to create loading screen for lottie animation.)
-
+ 2. randomword.js 
+ 3. message.js (Used to show pop up message after submitting a form.)
+ 4. typinggame.js 
+ 5. hangman.js 
+ 6. hangman-wordlist.js
+ 7. dictionary.js 
+ 8. login.js 
+ 9. preloader.js (Used to create loading screen for lottie animation.)
 
 
 ### API Features (Explained in-depth above)
@@ -145,6 +145,8 @@ User Stories:
     - The project uses **CSS** to stylize the website.
 - [JSS](https://262.ecma-international.org/5.1/)
     - The project uses **JS** to enhance the functionality of the website.
+- [Bootstrap](https://getbootstrap.com/)
+    - The project uses **Bootstrap** to implement carousel and stylize the website.
 - API
     - The project uses **API** to enhance the functionality of the website.
 - [Lottie](https://lottiefiles.com/)
@@ -155,32 +157,41 @@ User Stories:
  1. Navigation Bar
     - When a user clicks a chosen section (Home, Game, About, Login), the page changes to the chosen section.
     - When a user has a smaller screen, the navbar adjusts to a hamburger menu.
+ 2. Featured Games Carousel
+    - When cursor is not placed over carousel, carousel enables auto-sliding capability.
+    - When a user presses the arrows symbolizing back and forth, it will slide to the next page.
+    - When a user presses the game buttons, it will redirect them to that respective game.
  2. Typing Game
     - When a user presses the start button, a word shows up and the countdown starts.
     - As the user types, the word highlights the typed key, highlighting to red.
     - For each correct typed answer, the score adds up by one.
     - When the game ends, a pop up message shows up, showing the score of the user.
-3. Hangman Game
+ 3. Hangman Game
     - When a user presses a key, the button changes to a greyish colour, showing that the button is pressed already.
     - When a user presses the right key, the character is shown in the word area.
     - When a user presses the wrong key, the hangman changes image, the number of incorrected guesses add up.
     - When a user has exceeded the maximum of incorrect guesses (6 guesses) the losing gif shows up and the game is restarted.
     - When a user found the word, the winning gif shows up and the game is restarted.
-4. Dictionary
+ 4. Dictionary
     - When a user searches for a word and presses the button, its defintions are shown.
     - When a user searches for a word that is not available, a error message is shown. ("Couldn't Find The Word")
-5. Contact Us Form
+ 5. Contact Us Form
     - When a user presses submit button, a pop up message is shown telling them their Query is submitted.
-6. Login Form
+ 6. Login Form
     - When a user presses submit button, a pop up message is shown telling them that they are logged in.
-7. Register Form
+ 7. Register Form
     - When a user presses submit button, a pop up message is shown telling them that they are registered.
+ 8. Footer
+    - When a user presses the links, it will redirect them to that respective page.
+
 
 
 ## Credits ##
+- The inspiration for the navigation bar is from [KevinPowell](https://www.youtube.com/watch?v=HbBMp6yUXO0&ab_channel=KevinPowell)
 - The inspiration for the Typing Game is from [zunit](https://codepen.io/zunit)
 - The inspiration for the Hangman Game is from [codingnepal.com](https://www.codingnepalweb.com/)
 - The API used are from [Formspree.com](https://formspree.io/), [VercelRandomWordApi.com](https://random-word-api.vercel.app/),[HerokuRandomWordApi.com](https://random-word-api.herokuapp.com/home), [DictionaryApi.com](https://dictionaryapi.dev/).
+
 
 ### Media
 - The icons are used from [flaticon.com](https://www.flaticon.com/)
