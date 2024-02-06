@@ -226,16 +226,16 @@ ul {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0; /* Adjusted bottom position */
+  bottom: -3px; /* Adjusted bottom position */
   background-color: red;
-  height: 2px;
+  height: 3px;
   width: 50px;
 }
 
 .footer-col h4 {
   font-size: 20px;
   color: white;
-  margin-top: 0; /* Adjusted margin */
+  margin-top: 5px; /* Adjusted margin */
   font-weight: 600;
   position: relative;
 }
