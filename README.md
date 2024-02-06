@@ -54,7 +54,7 @@ User Stories:
         - API Implementation
             - Utilizes Vercel Random Word API, where we retrieve 50 random words, that are uppercase and alphabetized, adding it to a list, which would be used for the typing game.
         - Javascript Implementation (typinggame.js):
-            - Countdown timer: Players are given a countdown of 30 seconds to play the game.
+            - Difficulty: Players are given a choice in the difficulty, this is in the form of 15,30,45,60 seconds as the difficulty level. The harder the difficulty, the less the time given.
             - Random word generation: Selected word to be typed in the game is randomzed based on the number of words in the list, in this case 50.
             - Keystroke detection: Tracks player input and highlights matching letters, providing visual feedback and a sense of progress. (span)
             - Scorekeeping: Tracks correctly typed words and displays the player's score, motivating them to improve their performance. A pop up message is shown when the countdown ends.
@@ -63,9 +63,9 @@ User Stories:
             - While waiting for the page to load, we utilised a lottie animation that vanishes after 3 seconds.
 
 
-    - ### Hangman Game (Javascript & Lottie)
+    - ### Hangman Game (Javascript & Lottie & API)
 
-        - Javascript Implementation (hangman.js, hangman-wordlist.js)
+        - Javascript Implementation (hangman.js)
             - Hangman visuals: Displays an evolving hangman image as players make incorrect guesses, creating a sense of urgency and engagement. If a user inputs a wrong character, a new hangman visual is shown.
             - Word selection: Randomly chooses a word from a list, ensuring a different challenge each time. The words are randomly selected from the hangman-wordlist.js.
             - Hint system: Provides a helpful hint to guide players towards the correct word. The hints are randomly selected from the hangman-wordlist.js.
@@ -73,6 +73,8 @@ User Stories:
             - Guess tracking: Highlights correctly guessed letters within the word and keeps track of wrong guesses. The player is given 6 tries to guess the word, this is displayed on the page.
             - Game over scenarios: Displays a modal with a victory or loss message, along with the correct word, at the end of each game, after 6 wrong tries.
             - Play again option: Offers a convenient button to initiate a new game. The games is then restarted and a new word and hint is shown. The hangman picture changes to the original hangman back.
+        - API Implementation
+            - The words and hints(defintion) are retrieved from 2 APIs (I only used APIs that are free and did not require a key.) After retrieving a word from the first API, it retrieves the definition from the second API. The code is recursive because sometimes the dictionary API did not have the defintion, therefore had to retrieve again. This is done so until the list has 20 words retrieved from the APIs.
         - Lottie Animation Implementation (preloader.js)
             - While waiting for the page to load, we utilised a lottie animation that vanishes after 3 seconds.
 
@@ -188,4 +190,4 @@ User Stories:
 
 
 ### Acknowledgements
-
+- In creating the Hangman Game, I(Danish) used a youtube tutorial from [codingnepal.com](https://youtu.be/hSSdc8vKP1I?si=wGXzVW75S_JZUpBY) to aid me in creating the concept of the game, however the incorporation of API into the game was created by Danish.

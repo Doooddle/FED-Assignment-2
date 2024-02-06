@@ -8,7 +8,8 @@ var temp = document.querySelector('.time');
  	var points = 0;
  	var spans;
  	var typed;
- 	var seconds = 30;
+ 	var seconds;
+	
 
 
 
@@ -44,8 +45,6 @@ window.onload = fetchWords;
     			words.innerHTML = "";     // Clears the words
     			button.disabled = false;
     			clearInterval(timer);    // Stops the timer
-    			seconds = 30;
-    			timerDiv.innerHTML = "30";
     			button.disabled = false;	
     		}
  		}, 1000);
@@ -75,6 +74,10 @@ window.onload = fetchWords;
 
   // Add a click event listener to the button
   	button.addEventListener("click", function(e){
+		console.log(timeSelect);
+		var timeSelect = document.querySelector("#timeSelect");  // Selects the "Difficulty" timer from user input (Default is 15)
+    	seconds = parseInt(timeSelect.value);
+		timerDiv.innerHTML = seconds;
   		countdown();
   		random();   // Generate a random word
   		button.disabled = true;	  // Disable the button

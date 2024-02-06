@@ -443,6 +443,16 @@ Typing Game Page
     color: #ECF0F1;
 }
 
+.timeInputWrap {
+  margin: 20px 0;
+}
+
+#timeSelect {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
 /*  /  /  /  /  /
 
 Hangman Game Page
@@ -1004,11 +1014,11 @@ Preloader
 
 /  /  /  /  / */
 
-.loader{
+/* .loader{
   position: fixed;
   top: 0;
   left: 0;
-  background: lightgrey;
+  background: #A8D0E6;
   height: 100%;
   width: 100%;
   display: flex;
@@ -1024,5 +1034,31 @@ Preloader
   100%{
     opacity: 0;
     visibility: hidden;
+  }
+}
+ */
+
+ .loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #A8D0E6;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disppear {
+  animation: vanish 3s forwards;
+  animation-delay: 1s ; /* Delay vanish effect*/
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    
   }
 }
