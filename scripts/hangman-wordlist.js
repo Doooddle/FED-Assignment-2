@@ -1,4 +1,4 @@
-
+/*jshint esversion: 6 */ 
 // list of word to be utilised for hangman game, it provides hints too
 // API takes time to find words that also have defintions, so I added some filler words first
 let wordList = [

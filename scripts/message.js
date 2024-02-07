@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */ 
+
 // This function is used to show a pop up message after submitting.
 
 function showMessage(message) {

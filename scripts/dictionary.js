@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */ 
+
 // Base URL for the dictionary API
 const url = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 

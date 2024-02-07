@@ -1,14 +1,15 @@
 # EduLand Educational Website Project (FED Assignment 2) By Danish and Garrett #
 
+
 User’s goal:
 Unleash student's inner word wizard: Master the art of vocabulary through captivating challenges, unlocking new words with every victory and feeling the exhilarating rush of linguistic growth.
 
 Website's goal:
-Transform learning from a chore into a thrilling adventure: Ignite a passion for words by weaving exciting game mechanics with language acquisition, empowering students to conquer vocabulary challenges with smiles.
+Transform learning from a chore into a thrilling adventure. The Website aims to Ignite a passion for words by weaving exciting game mechanics with language acquisition, empowering students to conquer vocabulary challenges with smiles.
 
 ## Design Process ##
 
-This website is designed for students seeking to learn through the use of interactive and fun games. The users want to play games that will alllow then to learn more words and increase their vocabulary. The project aims to provide a user-friendly and interactive platform that meets these needs and establishes the goal of the website, which is to educate student through interactive and fun games.
+This website is designed for students seeking to learn through the use of interactive and fun games. The users want to play games that will allow then to learn more words and increase their vocabulary. The project aims to provide a user-friendly and interactive platform that meets these needs and establishes the goal of the website, which is to educate student through interactive and fun games.
 
 
 User Stories:
@@ -203,7 +204,7 @@ User Stories:
 
 
 ### Media
-- The icons used are from [flaticon.com](https://www.flaticon.com/)
+- The logo and icons used are from [flaticon.com](https://www.flaticon.com/)
 - The hangman images are used from [codingnepal.com](https://www.codingnepalweb.com/)
 
 

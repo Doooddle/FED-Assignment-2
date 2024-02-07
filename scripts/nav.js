@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */ 
 var Navigation = document.querySelector(".nav-bar");
 var ToggleNav = document.querySelector(".nav-toggle");
 

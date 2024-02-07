@@ -1,4 +1,4 @@
-
+/*jshint esversion: 6 */ 
 // Used to show lottie animation before page loads fully
 var loader = document.querySelector(".loader");
 

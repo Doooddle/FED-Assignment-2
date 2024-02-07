@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */ 
 // Selecting DOM elements for the game interface
 const wordDisplay = document.querySelector(".word-display");
 const guessesText = document.querySelector(".guesses-text b");
@@ -21,7 +22,7 @@ const resetGame = () => {
     wordDisplay.innerHTML = currentWord.split("").map(() => `<li class="letter"></li>`).join("");   // Display blank spaces for letters
     keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);  // Enable all keyboard buttons
     gameModal.classList.remove("show");    // Hide game over modal
-}
+};
 
 // Function to select a random word and hint
 const getRandomWord = () => {
@@ -30,7 +31,7 @@ const getRandomWord = () => {
     currentWord = word; // Set the current word for the game
     document.querySelector(".hint-text b").innerText = hint;
     resetGame();  // Start a new game with the selected word
-}
+};
 
 
 // Function to handle game over scenarios (win or loss)
@@ -41,7 +42,7 @@ const gameOver = (isVictory) => {
     gameModal.querySelector("h4").innerText = isVictory ? 'Congrats!' : 'Game Over!';
     gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`;
     gameModal.classList.add("show");   // Show the game over modal
-}
+};
 
 
 // Function to handle letter guesses
@@ -67,7 +68,7 @@ const initGame = (button, clickedLetter) => {
     // Calling gameOver function if any of these condition meets
     if(wrongGuessCount === maxGuesses) return gameOver(false);                 // Game over: loss
     if(correctLetters.length === currentWord.length) return gameOver(true);    // Game over: win
-}
+};
 
 // Create keyboard buttons and attach click events
 for (let i = 97; i <= 122; i++) {

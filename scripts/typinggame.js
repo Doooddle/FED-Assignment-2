@@ -1,4 +1,5 @@
 
+/*jshint esversion: 6 */ 
 // Selecting the HTML elements and initializing variables
 var temp = document.querySelector('.time');
  	var button = document.querySelector("button");

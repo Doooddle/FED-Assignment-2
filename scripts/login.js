@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */ 
 const wrapper = document.querySelector('.login-wrapper');
 const loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');

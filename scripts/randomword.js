@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */ 
 /* function getRandomWord() {
     fetch('https://random-word-api.herokuapp.com/word')
     .then(response => response.json())
