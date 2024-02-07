@@ -1,4 +1,3 @@
-/*jshint esversion: 6 */ 
 const input = document.querySelector("input");
 const guess = document.querySelector(".guess");
 const checkButton = document.querySelector("button");
