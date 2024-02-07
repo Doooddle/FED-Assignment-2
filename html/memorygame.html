@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Memory Card Game</title>
-		<link rel="stylesheet" href="../css/style.css">
-		<script src="../scripts/preloader.js" defer></script>
-        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-	</head>
-    <body>
-        <h1> Memory Card Game </h1>
-        <div class="card-grid-container">
-        </div>
-        <p>Score: <span class="score"></span></p>
-        <div class="restart-btn">
-            <button onclick="restart()">Restart</button>
-        </div>
-        <script src="memorygame.js"></script>
-    </body>
+	
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Memory Card Game</title>
+	<link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/memorygame.js"></script>
+	<script src="../scripts/preloader.js" defer></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="../scripts/memorygame.js"></script>
+</head>
+<body>
+    <div class="memory-game">
+    <h1> Memory Card Game </h1>
+    </div>
+    <div class="card-grid-container">
+    </div>
+    <div class="memory-score">
+    <p>Score: <span class="score"></span></p>
+    </div>
+    <div class="restart-btn">
+        <button onclick="restart()">Restart</button>
+    </div>
+</body>
 </html>
 
 
