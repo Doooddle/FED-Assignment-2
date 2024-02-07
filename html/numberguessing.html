@@ -7,45 +7,30 @@
 		<link rel="stylesheet" href="../css/style.css">
 		<script src="../scripts/preloader.js" defer></script>
         <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+        <script src="numberguessing.html"defer></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 	</head>
-
-	<body class="typinggame-body">
+    <body class="typinggame-body">
 		<div class="loader">
             <dotlottie-player src="https://lottie.host/65022aa6-9c10-4878-8be0-894b3ff19f81/ZTAhZsCfh2.json" background="transparent" speed="2" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
         </div>
 		<a href="games.html" class="back-button">
 			<img src="../images/back-to-gamepage.png" alt="Back to Home">
 		</a>
-		<div class="wrapper">
-			<h1>EduLand Type Racer</h1>
-			<p>Type as many educational words as you can until time runs out!</p>
-			<button class="typinggame-button">START</button>
-			<div class="timeSelectWrap">
-				<p>Select Difficulty</p>
-				<select id="timeSelect">
-					<option value="15">Master</option>
-					<option value="30">Scholar</option>
-					<option value="45">Apprentice</option>
-					<option value="60">Novice</option>
-				</select>
-			</div>
-			<div class="outerWrap">
-				<div class="scoreWrap">
-					<p>Score</p>
-					<span class="score">0</span>
-				</div>
-				<div class="timeWrap">
-					<p>Time left</p>
-					<span class="time">0</span>
-				</div>
-			</div>
-			<div class="wordsWrap">
-				<p class="words"></p>
-			</div>
-		</div>
-		<script src="../scripts/typinggame.js"></script>
-	</body>
-</html>
+
+        <div class="number-guessing">
+            <h1> Eduland Number Guesser</h1>
+            <br>
+            <header>Guess a number between 1 and 10000</header>
+            <p class="guess"></p>
+            <div class="input-field">
+              <input type="number" min="1" max="10000"/>
+              <button>Check</button>
+            </div>
+            <p>You have <span class="chances">10</span> tries left.</p>
+          </div>
+          <script src="../scripts/numberguessing.js" defer></script>
+    
+    </body>

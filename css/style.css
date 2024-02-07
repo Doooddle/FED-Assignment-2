@@ -846,6 +846,78 @@ Dictionary Page
   text-align: center;
 }
 
+/*  /  /  /  /  /
+
+Number Guessing
+
+/  /  /  /  / */
+
+.number-guessing {
+  margin-top: 14%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 50px 70px;
+  border-radius: 12px;
+  background: #fff;
+  text-align: center;
+}
+
+.number-guessing h1{
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+}
+.number-guessing header {
+  font-size: 25px;
+  font-weight: 600;
+  color: #F76C6C;
+  padding-bottom: 20px;
+}
+
+.number-guessing p {
+  color: #F76C6C;
+  font-size: 20px;
+}
+
+.number-guessing .input-field {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.input-field input,
+.input-field button {
+  height: 50px;
+  width: 100px;
+  outline: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.input-field input {
+  text-align: center;
+  color: #707070;
+  width: 150px;
+  border: 3px solid #F76C6C;
+}
+
+.input-field input:disabled {
+  cursor: not-allowed;
+}
+
+.input-field button {
+  border: none;
+  background: #F76C6C;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-field button:active {
+  transform: scale(0.85);
+}
 
 /*  /  /  /  /  /
 
