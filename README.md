@@ -203,7 +203,7 @@ User Stories:
 
 
 ### Media
-- The icons are used from [flaticon.com](https://www.flaticon.com/)
+- The icons used are from [flaticon.com](https://www.flaticon.com/)
 - The hangman images are used from [codingnepal.com](https://www.codingnepalweb.com/)
 
 
