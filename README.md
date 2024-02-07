@@ -97,6 +97,17 @@ User Stories:
         - Lottie Implementation
             - Before page loads, a lottie animation plays for 3 seconds.
 
+    - ### Number Guessing Game (Javascript & Lottie)
+        - This feature utlizes Javascript and Lottie.
+        -Javascript Implementation (numberguessing.js)
+            - Random Number Generation: When page is loaded, a random number between 1 and 1000 is chosen randomly.
+            - Hint system: Higher or lower message is given when number is inputted.
+            - Guess tracking: Each round, the user is given 10 guesses to try to pinpoint the correct answer, if inputted answer is wrong, guessing chance is decreased.
+            - Game Over: When answer is inputted correctly or the user runs out of guessing attempts, either a victory or a loss message is shown.
+            - Restart button: Restart button is implemented when game is over, 'check' button becomes 'restart' button.
+        - Lottie Animation Implementation (preloader.js)
+            - While waiting for the page to load, we utilised a lottie animation that vanishes after 3 seconds.
+
 4. ### About Page
 
     - ### About Us Section (Lottie Implementation)
@@ -127,8 +138,9 @@ User Stories:
  5. hangman.js (Used to play the Hang Man Game.)
  6. hangman-wordlist.js (Uses API to retrieve word and hint, into a list.)
  7. dictionary.js (Used API to retrieve the defintions of the word.)
- 8. login.js (Used to change the form, from login to register and vice versa.)
- 9. preloader.js (Used to create loading screen for lottie animation.)
+ 8. numberguessing.js (Used to play the number guessing game.)
+ 9. login.js (Used to change the form, from login to register and vice versa.)
+ 10. preloader.js (Used to create loading screen for lottie animation.)
 
 
 ### API Features (Explained in-depth above)
@@ -185,13 +197,17 @@ User Stories:
  4. Dictionary
     - When a user searches for a word and presses the button, its defintions are shown.
     - When a user searches for a word that is not available, a error message is shown. ("Couldn't Find The Word")
- 5. Contact Us Form
+ 5. Number Guessing
+    - When a user presses a number out of range, guessing chances will not decrease. ("Number is invalid")
+    - When a user correctly guesses the correct number, a message of congratulations will be given, and 'check' button will switch to 'restart' button.
+    -When a user uses up all their attempts, the correct number will be shown and 'check' button will switch to 'restart' button.
+ 6. Contact Us Form
     - When a user presses submit button, a pop up message is shown telling them their Query is submitted.
- 6. Login Form
+ 7. Login Form
     - When a user presses submit button, a pop up message is shown telling them that they are logged in.
- 7. Register Form
+ 8. Register Form
     - When a user presses submit button, a pop up message is shown telling them that they are registered.
- 8. Footer
+ 9. Footer
     - When a user presses the links, it will redirect them to that respective page.
 
 
