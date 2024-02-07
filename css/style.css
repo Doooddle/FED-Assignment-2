@@ -312,7 +312,7 @@ ul {
   }
 
   .flex-item-about-title{
-    flex: 1 1 10%;
+    flex: 1 1 15%;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     background: #374785;    
   }
@@ -703,12 +703,14 @@ Games Page
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 8px;
 }
 
 .flex-item-games img {
   height: 300px;
-  width: 400px;
+  width: 550px;
   object-fit: cover;
+  border-radius: 4px;
 }
 
 .flex-item-games img:hover {
