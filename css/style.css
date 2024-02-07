@@ -13,7 +13,6 @@ body{
 }
 
 
-
 /*Nav bar*/
 
 .nav-bar, .nav-logo {
@@ -300,7 +299,7 @@ ul {
 
   }
   .flex-item-about{
-    padding: 50px;
+    padding: 40px 10px;
     flex: 1 1 33%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     background: #cee9f8;
@@ -385,32 +384,36 @@ Typing Game Page
 /  /  /  /  / */
 
 
-
-
 .bg {
-	background-color: #F76C6C;
+  background-color: #F76C6C;
 }
 
 .wrapper {
-	max-width: 600px;
-	margin: 0 auto;
-	width: 100%;
-	text-align: center;
-	padding: 2%;
-	height: 500px;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 90%; /* Adjusted width for better responsiveness */
+  text-align: center;
+  padding: 2%;
+  min-height: 500px;
 }
 
-.scoreWrap {float: left;}
-.timeWrap {float: right;}
+.scoreWrap {
+  float: left; /* Float for larger screens */
+  margin-bottom: 20px; /* Added margin for better spacing */
+}
+
+.timeWrap {
+  float: right; /* Float for larger screens */
+}
 
 .outerWrap:after {
-	content: "";
-	display: block;
-	clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .typinggame-button {
-   border: none;
+  border: none;
   background-color: #FF7373;
   box-shadow: 0px 5px 0px 0px #CE4646;
   outline: none;
@@ -420,8 +423,6 @@ Typing Game Page
   text-decoration: none;
   margin: 20px;
   color: #fff;
-  position: relative;
-  display: inline-block;
   cursor: pointer;
 }
 
@@ -430,19 +431,22 @@ Typing Game Page
   box-shadow: 0px 1px 0px 0px;
 }
 
-.scoreWrap p, .scoreWrap span, .timeWrap p, .timeWrap span {
-    font-size: 30px;
-    color: #FF7373;
+.scoreWrap p,
+.scoreWrap span,
+.timeWrap p,
+.timeWrap span {
+  font-size: 30px;
+  color: #FF7373;
 }
 
 .wordsWrap {
-	margin-top: 50px;
+  margin-top: 50px;
 }
 
-.words span{
-    font-size: 60px;
-    letter-spacing: 1px;
-    color: #ECF0F1;
+.words span {
+  font-size: 60px;
+  letter-spacing: 1px;
+  color: #ECF0F1;
 }
 
 .timeInputWrap {
@@ -455,6 +459,47 @@ Typing Game Page
   border-radius: 5px;
   border: 1px solid #ddd;
 }
+
+/* Media Queries for Better Responsiveness */
+@media (max-width: 35rem) {
+  .wrapper {
+    padding: 5%;
+  }
+
+  .scoreWrap {
+    float: none; 
+    margin-bottom: 20px;
+  }
+
+  .timeWrap {
+    float: none; 
+  }
+
+  .typinggame-button {
+    font-size: 18px;
+    padding: 8px 12px;
+    margin: 10px;
+  }
+
+  .words span {
+    font-size: 40px;
+  }
+
+  .scoreWrap p,
+  .scoreWrap span,
+  .timeWrap p,
+  .timeWrap span {
+    font-size: 24px;
+  }
+
+  #timeSelect {
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+
+
+
 /*  /  /  /  /  /
 
 Hangman Game Page
