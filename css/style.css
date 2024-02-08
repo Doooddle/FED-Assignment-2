@@ -319,6 +319,9 @@ ul {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     background: #cee9f8;
     margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .flex-item-about:hover{
@@ -824,7 +827,7 @@ Games Page
     width: auto;
     max-width: 100%;
     max-height: 100%; 
-    object-fit: contain; /
+    object-fit: contain; 
   }
 
   .back-button {

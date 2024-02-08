@@ -229,4 +229,5 @@ User Stories:
 
 
 ### Our GitHub Page
-- Our Page [Eduland]()
+- Our Page [Eduland](https://doooddle.github.io/FED-Assignment-2/)
+
