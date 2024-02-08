@@ -22,7 +22,6 @@ function getRandomWordAndDefinition(count = 20) {
         .then(response => response.json())
         .then(data => {
             let word = data[0]; // Get the word
-            console.log("Retrieved word: " + word); // Log the word to the console (did this for testing, good too see whats going on)
             fetch(`${url}${word}`) // Fetch the word's definition from the dictionary API
                 .then((response) => {
                     if (!response.ok) { // If the response status is not ok (word's definition not found)
@@ -41,7 +40,7 @@ function getRandomWordAndDefinition(count = 20) {
                     getRandomWordAndDefinition(count - 1);
                 })
                 .catch(() => {
-                    console.log('Word definition not found, fetching a new word...');
+                    // console.log('Word definition not found, fetching a new word...');
                     getRandomWordAndDefinition(count); // If word's definition is not found, fetch a new word without decrementing the count
                 });
         })

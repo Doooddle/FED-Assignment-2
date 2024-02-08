@@ -154,6 +154,10 @@ User Stories:
  1. Lottie animates when hovered. (Used in about us section)
  2. Lottie animation used as loading screen before page loads fully. (Used in Hangman Game, Typing Game and Dictionary)
 
+### Features to Implement in Future
+1. Track score of students.
+2. Leaderboard showing highscores.
+
 
 ## Technologies Used ##
 
@@ -171,6 +175,13 @@ User Stories:
     - The project uses **API** to enhance the functionality of the website.
 - [Lottie](https://lottiefiles.com/)
     - The project uses **Lottie** to enhance the visualization of the website.
+- [AdobeXD](https://helpx.adobe.com/support/xd.html)
+    - The project uses **AdobeXD** in creating the wireframes for the website.
+- [Google Fonts](https://fonts.google.com/)
+    - The project uses **Google Fonts** to enhance the visualization and styling of the text in the website.
+- [JShint](https://jshint.com/), [Jigsaw](https://jigsaw.w3.org/css-validator/), [w3c](https://validator.w3.org/)
+    - The project uses the above code validators to ensure that the project is error free.
+
 
 
 ## Testing ##
@@ -221,13 +232,21 @@ User Stories:
 
 ### Media
 - The logo and icons used are from [flaticon.com](https://www.flaticon.com/)
-- The hangman images are used from [codingnepal.com](https://www.codingnepalweb.com/)
+- The hangman images are used from [codingnepal.com](https://youtu.be/hSSdc8vKP1I?si=wGXzVW75S_JZUpBY)
+- The Roboto Font is used from [Google Fonts](https://fonts.google.com/specimen/Roboto)
 
 
 ### Acknowledgements
-- In creating the Hangman Game, I(Danish) used a youtube tutorial from [codingnepal.com](https://youtu.be/hSSdc8vKP1I?si=wGXzVW75S_JZUpBY) to aid me in creating the concept of the game, however the incorporation of API into the game was created by me.
+- In creating the Hangman Game, I (Danish) used a youtube tutorial from [codingnepal.com](https://youtu.be/hSSdc8vKP1I?si=wGXzVW75S_JZUpBY) to aid me in creating the concept of the game, however the incorporation of API into the game was created by me.
 
 
 ### Our GitHub Page
 - Our Page [Eduland](https://doooddle.github.io/FED-Assignment-2/)
+
+### Our Individual Contributions
+- Danish
+    1. 
+
+- Garrett
+    1. 
 

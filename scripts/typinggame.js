@@ -23,7 +23,6 @@ function fetchWords() {
         .then(response => response.json())
         .then(data => {
             list = data;  
-            console.log(list);  // Log the list to the console
         })
         .catch(error => console.error('Error:', error));
 }
