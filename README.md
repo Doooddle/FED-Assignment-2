@@ -231,6 +231,7 @@ User Stories:
 - The inspiration for the navigation bar is from [KevinPowell](https://www.youtube.com/watch?v=HbBMp6yUXO0&ab_channel=KevinPowell)
 - The inspiration for the Typing Game is from [zunit](https://codepen.io/zunit)
 - The inspiration for the Hangman Game is from [codingnepal.com](https://www.codingnepalweb.com/)
+- The inspiration for the Number Guessing Game is from [codingnepal.com](https://www.codingnepalweb.com/)
 - The API used are from [Formspree.com](https://formspree.io/), [VercelRandomWordApi.com](https://random-word-api.vercel.app/),[HerokuRandomWordApi.com](https://random-word-api.herokuapp.com/home), [DictionaryApi.com](https://dictionaryapi.dev/).
 
 
@@ -238,6 +239,7 @@ User Stories:
 - The logo and icons used are from [flaticon.com](https://www.flaticon.com/)
 - The hangman images are used from [codingnepal.com](https://youtu.be/hSSdc8vKP1I?si=wGXzVW75S_JZUpBY)
 - The Roboto Font is used from [Google Fonts](https://fonts.google.com/specimen/Roboto)
+- The Lato font is used from [Google Fonts](https://fonts.google.com/specimen/Lato)
 
 
 ### Acknowledgements
@@ -286,5 +288,26 @@ User Stories:
         - Design the lottie animation, changing the design to fit the design of the page.
 
 - Garrett
-    1. 
+    1. Navbar. Coded the entire implementation for this section
+        - Coded design of navbar that links to other pages (css)
+        - Coded the design of the responsive menu
+        - Ensured responsive layout
+    2. Featured Games Carousel. Coded entire implementation of the carousel
+        - Coded the carousel to be auto-scrolling through bootstrap.
+        - Ensured button has responsive layout
+    3. Word of the Day implementation
+        - Coded styling of word of the day (css)
+        - Ensured responsive layout
+    4. Footer. Coded the entire implementation for this section
+        - Coded design of the footer
+        - Ensured responsive layout 
+    5. Number Guessing. Coded the entire implementation for this page.
+        - Created design of the game (css)
+        - Coded the concept of the game, the javascript implementation where it randomly generates a number for usage.
+        - Ensured responsive layout.
+    6. Styling.
+        - Helped to style different containers in games and about pages to ensure they work better in responsive.
+
+
+        
 
