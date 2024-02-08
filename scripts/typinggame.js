@@ -57,9 +57,7 @@ window.onload = fetchWords;
      function random() {
   		words.innerHTML = ""; 
   		var random = Math.floor(Math.random() * list.length);   // Generates a random number
-        console.log(random);
   		var wordArray = list[random].split("");      // Splits the selected word into an array of letters
-        console.log(wordArray);
   		for (var i = 0; i < wordArray.length; i++) { //building the words with spans around the letters
   			var span = document.createElement("span");
   			span.classList.add("span");
@@ -74,7 +72,6 @@ window.onload = fetchWords;
 
   // Add a click event listener to the button
   	button.addEventListener("click", function(e){
-		console.log(timeSelect);
 		var timeSelect = document.querySelector("#timeSelect");  // Selects the "Difficulty" timer from user input (Default is 15)
     	seconds = parseInt(timeSelect.value);
 		timerDiv.innerHTML = seconds;
