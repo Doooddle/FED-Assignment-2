@@ -66,6 +66,7 @@ User Stories:
             - Animated word fading: Adds a visual flourish to the game, making it more visually appealing and rewarding for players.
         - Lottie Animation Implementation (preloader.js)
             - While waiting for the page to load, we utilised a lottie animation that vanishes after 3 seconds.
+        - Instructions are added to the game ensuring that users will understand how to play it.
 
 
     - ### Hangman Game (Javascript & Lottie & API)
@@ -83,6 +84,7 @@ User Stories:
             - The words and hints(defintion) are retrieved from 2 APIs (I only used APIs that are free and did not require a key.) After retrieving a word from the first API, it retrieves the definition from the second API. The code is recursive because sometimes the dictionary API did not have the defintion, therefore had to retrieve again. This is done so until the list has 20 words retrieved from the APIs.
         - Lottie Animation Implementation (preloader.js)
             - While waiting for the page to load, we utilised a lottie animation that vanishes after 3 seconds.
+        - Instructions are added to the game ensuring that users will understand how to play it.
 
     - ### Dictionary (API & Javascript & Lottie)
 
@@ -96,6 +98,7 @@ User Stories:
             - User-friendly interface: Presents information in a clear and readable format, with a dedicated button to play pronunciation audio.
         - Lottie Implementation
             - Before page loads, a lottie animation plays for 3 seconds.
+        - Instructions are added to the page ensuring that users will understand how to play it.
 
     - ### Number Guessing Game (Javascript & Lottie)
         - This feature utlizes Javascript and Lottie.
@@ -107,6 +110,7 @@ User Stories:
             - Restart button: Restart button is implemented when game is over, 'check' button becomes 'restart' button.
         - Lottie Animation Implementation (preloader.js)
             - While waiting for the page to load, we utilised a lottie animation that vanishes after 3 seconds.
+        - Instructions are added to the game ensuring that users will understand how to play it.
 
 4. ### About Page
 
@@ -152,7 +156,7 @@ User Stories:
 
 ### Lottie Implementation (Explained in-depth above)
  1. Lottie animates when hovered. (Used in about us section)
- 2. Lottie animation used as loading screen before page loads fully. (Used in Hangman Game, Typing Game and Dictionary)
+ 2. Lottie animation used as loading screen before page loads fully. (Used in Hangman Game, Typing Game, Number Guessing and Dictionary)
 
 ### Features to Implement in Future
 1. Track score of students.
@@ -245,7 +249,41 @@ User Stories:
 
 ### Our Individual Contributions
 - Danish
-    1. 
+    1. Word of the day implementation
+        - I coded the API implementation in retrieving the word and its defintion recursively from the two APIs.
+    2. Typing Game. Coded the entire implementation of the game.
+        - I coded the API implementation in order to retrieve words from the API. 50 words would be retrieved and added to the list which is used to play the game.
+        - Coded the javascript to play the game, all the features required for the game, the countdown, the random word function to retrieve the word from the list and the Span function where the background colour of the word changes as the user types.
+        - Created the design of the game (css).
+        - Ensured responsive layout.
+    3. Hang Man Game. Coded the entire implementation of the game.
+        - Coded the API implementation for the game, where it retrieves a word and its defintion (hint) from the two APIs recursively.
+        - Created the design of the game (css).
+        - Coded the concept of the game, the keys for the game, the hangman changes each wrong answer, the gifs when the user wins or losses the game.
+        - Ensured responsive layout.
+    4. Dictionary Implementation. Coded the entire Implemenation of this page.
+        - Coded the API Implemenation for the game, retrieves definition from API after user inputs word.
+        - Coded the concept of the implementation, showcase its definitions and input error message if word does not exist in dictionary API.
+        - Created the design of the game (css).
+        - Ensured responsive layout.
+    5. About Us Section. Coded the entire implementation for this page
+        - Content of the about section, explaining the purpose of the website.
+        - Lottie animation in each section.
+        - Created the design of the implementation (css).
+        - Ensured responsive layout.
+    6. Contact Us Form. Coded the entire implementation for this page
+        - Coded the API implementation for the form ensuring that data can be sent to the API.
+        - Created the design of the implementation (css).
+        - Ensured responsive layout.
+        - Pop up message when user submits the form.
+    7. Login and Registration. Coded the entire implementation for this page
+        - Created the design of the implementation (css).
+        - Ensured responsive layout.
+        - Pop up message when user submits the form.
+    8. Lottie Animations
+        - Coded the lottie animation used in About Us Section and implementing it.
+        - Coded the lottie animation used as Loading Screen before game loads and implementing it.
+        - Design the lottie animation, changing the design to fit the design of the page.
 
 - Garrett
     1. 
